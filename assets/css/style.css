@@ -1,0 +1,296 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: "Open Sans", Georgia, Serif;
+	font-size: 14px;
+	background-color: gray;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+textarea {
+	width: 100%;
+	border-radius: 7px;
+	border-color: #BBB;
+	height: 100px;
+}
+
+.container {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
+
+.column {
+	float: left;
+	border-right: 1px solid #BBB;
+	background-color: white;
+}
+
+.column__header {
+	font-size: 13px;
+	color: #999;
+	border-bottom: 1px solid #BBB;
+	background-color: #E0E3DF;
+}
+
+.column__header__text {
+	display: inline-block;
+	padding: 10px;
+}
+
+.column__side-menu {
+	min-width: 15%;
+	max-width: 200px;
+	background-color: transparent;
+	color: white;
+}
+
+.column__mail-list {
+	min-width: 25%;
+	max-width: 300px;
+	color: #999;
+	overflow: auto;
+	height: 100%;
+}
+
+.column__mail-list__mail-item {
+	padding: 20px;
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-bottom: 1px solid #BBB !important;
+	cursor: pointer;
+}
+
+.column__mail-list__mail-item--green {
+	border-color: green;
+}
+
+.column__mail-list__mail-item--purple {
+	border-color: purple;
+}
+
+.column__mail-list__mail-item--blue {
+	border-color: blue;
+}
+
+.column__mail-list__mail-item--red {
+	border-color: red;
+}
+
+.column__mail-list__mail-item__date__title {
+	color: #333;
+}
+
+.column__mail-list__mail-item__date {
+	float: right;
+}
+
+.column__mail-list__mail-item__fa-star {
+	width: 20px;
+	padding: 0 5px;
+}
+
+.fa-star--orange {
+	color: orange;
+}
+
+.fa-star--gray {
+	color: #D3D3D3;
+}
+
+.column__mail-list__mail-item__header {
+	padding-bottom: 10px;
+}
+
+.column__mail-list__mail-item__body {
+	margin-left: 50px;
+}
+
+.column__mail-list__mail-item__body__subject {
+	font-size: 13px;
+}
+
+.column__mail-list__mail-item__body__excerpt {
+	font-size: 12px;
+}
+
+.column__mail-body {
+	height: 100%;
+	color: #999;
+	width: 45%;
+}
+
+.column__mail-body__menu__option {
+	display: inline-block;
+	border-right: 1px solid #BBB;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.column__mail-body__menu__option__icon {
+	padding-right: 5px;
+}
+
+.column__mail-body__content {
+	overflow: auto;
+	padding: 20px 20px 0;
+	height: 95%;
+}
+
+.column__mail-body__content__title {
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.column__mail-body__content__tag {
+	font-size: 12px;
+	color: white;
+	padding: 3px 5px;
+	background-color: #D3D3D3;
+	border-radius: 5px;
+}
+
+.column__mail-body__content__icon {
+	padding-left: 5px;
+}
+
+.column__mail-body__date {
+	float: right;
+}
+
+.column__mail-body__content__main {
+	margin-top: 30px;
+}
+
+.column__mail-body__content__footer {
+	padding-top: 30px;
+}
+
+.column__chat {
+	min-width: 15%;
+	max-width: 200px;
+	height: 100%;
+}
+
+.column__chat__contacts {
+	color: #333;
+	height: 95%;
+	overflow: auto;
+}
+
+.column__chat__contact {
+	padding: 15px;
+	font-size: 12px;
+}
+
+.column__chat__contact:nth-child(odd) {
+	background-color: #D3D3D3;
+}
+
+.column__chat__contact__icon {
+	padding-right: 5px;
+}
+
+.column__chat__contact__icon--online {
+	color: green;
+}
+
+.column__chat__contact__icon--away {
+	color: yellow;
+}
+
+.column__chat__contact__icon--busy {
+	color: red;
+}
+
+.column__chat__contact__icon--offline {
+	color: gray;
+}
+
+.btn {
+	cursor: pointer;
+}
+
+.btn__compose {
+	padding: 10px 20px;
+	background-color: aqua;
+	border-radius: 5px;
+	margin: 10px 15px;
+	color: white;
+}
+
+.btn__icon {
+	float: rigth;
+	padding-left: 10px;
+}
+
+.rowgroup {
+	border-bottom: 1px #333 solid;
+	padding: 10px 0;
+}
+
+.rowgroup__row {
+	padding: 12px 20px;
+}
+
+.rowgroup__row--active {
+	background-color: #333;
+}
+
+.rowgroup__row__i {
+	padding: 0 10px 0 0;
+	width: 20px;
+}
+
+.rowgroup__row__span {
+	padding-left: 5px;
+}
+
+.rowgroup__row__label {
+	display: inline-block;
+	float: right;
+	padding: 6px 7px;
+	background-color: #333;
+	font-size: 10px;
+	font-weight: 400;
+	border-radius: 3px;
+	margin-top: -3px;
+}
+
+.rowgroup__row__label--active {
+	background-color: red;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.rowgroup__marked__ul__li {
+	margin: 10px 0;
+}
+
+ul .rowgroup__row__i--purple {
+	color: purple;
+}
+
+ul .rowgroup__row__i--green {
+	color: green;
+}
+
+ul .rowgroup__row__i--red {
+	color: red;
+}
+
+ul .rowgroup__row__i--blue {
+	color: blue;
+}

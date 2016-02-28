@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML and CSS Practice</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<aside class="column column__side-menu">
+			<button class="btn btn__compose">COMPOSE NEW MAIL<i class="fa fa-pencil-square-o btn__icon"></i></button>
+
+			<div class="rowgroup">
+				<div class="rowgroup__row rowgroup__row--active">
+					<i class="fa fa-inbox rowgroup__row__i"></i>
+					<span class="rowgroup__row__span">Inbox</span>
+					<label class="rowgroup__row__label rowgroup__row__label--active">8</label>
+				</div>
+				<div class="rowgroup__row">
+					<i class="fa fa-star rowgroup__row__i"></i>
+					<span class="rowgroup__row__span">Starred</span>
+				</div>
+				<div class="rowgroup__row">
+					<i class="fa fa-envelope rowgroup__row__i"></i>
+					<span class="rowgroup__row__span">Sent Emails</span>
+				</div>
+				<div class="rowgroup__row">
+					<i class="fa fa-newspaper-o rowgroup__row__i"></i>
+					<span class="rowgroup__row__span">Drafts</span>
+					<label class="rowgroup__row__label">3</label>
+				</div>
+				<div class="rowgroup__row">
+					<i class="fa fa-trash-o rowgroup__row__i"></i>
+					<span class="rowgroup__row__span">Trash</span>
+					<label class="rowgroup__row__label">48</label>
+				</div>
+			</div>
+
+			<div class="rowgroup">
+				<div class="rowgroup__row">
+					<i class="fa fa-plus-circle rowgroup__row__i"></i>
+					<span class="rowgroup__row__span">Add more</span>
+				</div>
+			</div>
+
+			<div class="rowgroup">
+				<div class="rowgroup__row">
+					<span>Marked</span>
+				</div>
+
+				<div class="rowgroup__row">
+					<ul>
+						<li class="rowgroup__marked__ul__li">
+							<i class="fa fa-square rowgroup__row__i rowgroup__row__i--purple"></i>
+							<span class="rowgroup__row__span">Personal</span>
+						</li>
+						<li class="rowgroup__marked__ul__li">
+							<i class="fa fa-square rowgroup__row__i rowgroup__row__i--green"></i>
+							<span class="rowgroup__row__span">Work</span>
+						</li>
+						<li class="rowgroup__marked__ul__li">
+							<i class="fa fa-square rowgroup__row__i rowgroup__row__i--red"></i>
+							<span class="rowgroup__row__span">Social</span>
+						</li>
+						<li class="rowgroup__marked__ul__li">
+							<i class="fa fa-square rowgroup__row__i rowgroup__row__i--blue"></i>
+							<span class="rowgroup__row__span">Family</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</aside>
+		<aside class="column column__mail-list">
+			<div class="column__header"><strong class="column__header__text">From:</strong></div>
+			<div class="column__mail-list__mail-item column__mail-list__mail-item--green">
+				<section class="column__mail-list__mail-item__header">
+					<input type="checkbox" checked></input>
+					<i class="fa fa-star column__mail-list__mail-item__fa-star fa-star--orange"></i>
+					<strong class="column__mail-list__mail-item__date__title">Dribble</strong>
+					<small class="column__mail-list__mail-item__date">01/10/2014</small>
+				</section>
+				
+				<section class="column__mail-list__mail-item__body">
+					<span class="column__mail-list__mail-item__body__subject">
+						Comment on Portfolio in progress
+					</span>
+					<p class="column__mail-list__mail-item__body__excerpt">
+						Integer libero lectus, porta acean pulvinar acfacillsis non arcu. Maecenas enim orci, adipiscing dictum sit amet gusce dapibus.
+					</p>
+				</section>
+			</div>
+			<div class="column__mail-list__mail-item column__mail-list__mail-item--purple">
+				<section class="column__mail-list__mail-item__header">
+					<input type="checkbox" checked></input>
+					<i class="fa fa-star column__mail-list__mail-item__fa-star fa-star--gray"></i>
+					<strong class="column__mail-list__mail-item__date__title">Walter White</strong>
+					<small class="column__mail-list__mail-item__date">01/10/2014</small>
+				</section>
+				
+				<section class="column__mail-list__mail-item__body">
+					<span class="column__mail-list__mail-item__body__subject">
+						Comment on Portfolio in progress
+					</span>
+					<p class="column__mail-list__mail-item__body__excerpt">
+						Integer libero lectus, porta acean pulvinar acfacillsis non arcu. Maecenas enim orci, adipiscing dictum sit amet gusce dapibus.
+					</p>
+				</section>
+			</div>
+			<div class="column__mail-list__mail-item column__mail-list__mail-item--blue">
+				<section class="column__mail-list__mail-item__header">
+					<input type="checkbox" checked></input>
+					<i class="fa fa-star column__mail-list__mail-item__fa-star fa-star--gray"></i>
+					<strong class="column__mail-list__mail-item__date__title">Hank Moody</strong>
+					<small class="column__mail-list__mail-item__date">01/10/2014</small>
+				</section>
+				
+				<section class="column__mail-list__mail-item__body">
+					<span class="column__mail-list__mail-item__body__subject">
+						Comment on Portfolio in progress
+					</span>
+					<p class="column__mail-list__mail-item__body__excerpt">
+						Integer libero lectus, porta acean pulvinar acfacillsis non arcu. Maecenas enim orci, adipiscing dictum sit amet gusce dapibus.
+					</p>
+				</section>
+			</div>
+			<div class="column__mail-list__mail-item column__mail-list__mail-item--red">
+				<section class="column__mail-list__mail-item__header">
+					<input type="checkbox" checked></input>
+					<i class="fa fa-star column__mail-list__mail-item__fa-star fa-star--gray"></i>
+					<strong class="column__mail-list__mail-item__date__title">Pearl Jam</strong>
+					<small class="column__mail-list__mail-item__date">01/10/2014</small>
+				</section>
+				
+				<section class="column__mail-list__mail-item__body">
+					<span class="column__mail-list__mail-item__body__subject">
+						Comment on Portfolio in progress
+					</span>
+					<p class="column__mail-list__mail-item__body__excerpt">
+						Integer libero lectus, porta acean pulvinar acfacillsis non arcu. Maecenas enim orci, adipiscing dictum sit amet gusce dapibus.
+					</p>
+				</section>
+			</div>
+			<div class="column__mail-list__mail-item column__mail-list__mail-item--green">
+				<section class="column__mail-list__mail-item__header">
+					<input type="checkbox" checked></input>
+					<i class="fa fa-star column__mail-list__mail-item__fa-star fa-star--orange"></i>
+					<strong class="column__mail-list__mail-item__date__title">Google Analytics</strong>
+					<small class="column__mail-list__mail-item__date">01/10/2014</small>
+				</section>
+				
+				<section class="column__mail-list__mail-item__body">
+					<span class="column__mail-list__mail-item__body__subject">
+						Comment on Portfolio in progress
+					</span>
+					<p class="column__mail-list__mail-item__body__excerpt">
+						Integer libero lectus, porta acean pulvinar acfacillsis non arcu. Maecenas enim orci, adipiscing dictum sit amet gusce dapibus.
+					</p>
+				</section>
+			</div>
+			<div class="column__mail-list__mail-item column__mail-list__mail-item--red">
+				<section class="column__mail-list__mail-item__header">
+					<input type="checkbox" checked></input>
+					<i class="fa fa-star column__mail-list__mail-item__fa-star fa-star--orange"></i>
+					<strong class="column__mail-list__mail-item__date__title">Envato Marketplaces</strong>
+					<small class="column__mail-list__mail-item__date">01/10/2014</small>
+				</section>
+				
+				<section class="column__mail-list__mail-item__body">
+					<span class="column__mail-list__mail-item__body__subject">
+						Comment on Portfolio in progress
+					</span>
+					<p class="column__mail-list__mail-item__body__excerpt">
+						Integer libero lectus, porta acean pulvinar acfacillsis non arcu. Maecenas enim orci, adipiscing dictum sit amet gusce dapibus.
+					</p>
+				</section>
+			</div>
+		</aside> 
+		<article class="column column__mail-body">
+			<div class="column__header">
+				<nav class="column__mail-body__menu">
+					<ul>
+						<li class="column__mail-body__menu__option">
+							<i class="fa fa-plus column__mail-body__menu__option__icon"></i><strong>New</strong>
+						</li>
+						<li class="column__mail-body__menu__option">
+							<i class="fa fa-reply column__mail-body__menu__option__icon"></i><strong>Reply</strong>
+						</li>
+						<li class="column__mail-body__menu__option">
+							<i class="fa fa-mail-forward column__mail-body__menu__option__icon"></i><strong>Forward</strong>
+						</li>
+						<li class="column__mail-body__menu__option">
+							<i class="fa fa-trash-o column__mail-body__menu__option__icon"></i><strong>Delete</strong>
+						</li>
+						<li class="column__mail-body__menu__option">
+							<i class="fa fa-print column__mail-body__menu__option__icon"></i><strong>Print</strong>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="column__mail-body__content">
+				<section class="column__mail-body__content__header">
+					<h1 class="column__mail-body__content__title">Lightning Bolt is Out!</h1>
+					<label class="column__mail-body__content__tag">Pearl Jam<i class="fa fa-caret-down column__mail-body__content__icon"></i></label>
+					<span>to</span>
+					<label class="column__mail-body__content__tag">info@themesflock.com</label>
+					<small class="column__mail-body__date">01/10/2014</small>
+				</section>
+				<section class="column__mail-body__content__main">
+					<p>Maecenas vitae sollicitudin arcu. Quisque eu feugiat tortor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla eget nunc id sem scelerisque posuere non vel purus. Etiam tempus ante diam. Nunc sit amet sodales magna. </p>
+
+					<p>In nec pellentesque velit. Etiam laoreet, massa nec dictum vestibulum, ligula massa elementum lacus, non pharetra ligula quam feugiat nulla. Aenean mattis maximus metus, a vestibulum nisl dapibus vitae. Nullam pellentesque, felis ac ultricies aliquet, nulla orci volutpat mauris, at fermentum nisi tellus quis lacus. </p>
+
+					<figure>
+						<img src="assets/images/pj.jpg" alt="Pearl Jam">
+					</figure>
+
+					<p>Vivamus vitae viverra elit. Praesent quam mauris, porta sed tincidunt ac, condimentum sit amet neque. Mauris porttitor velit vitae mi tincidunt porttitor. Nullam sed odio sed metus pulvinar mattis et et quam. In tortor turpis, tempus in iaculis sit amet, posuere sit amet velit.</p>
+				</section>
+				<section class="column__mail-body__content__footer">
+					<textarea placeholder="Click here to reply" style="padding: 10px;"></textarea>
+				</section>
+			</div>
+		</article>
+		<aside class="column column__chat">
+			<div class="column__header">
+				<strong class="column__header__text">Contacts Online (38)</strong>
+			</div>
+			<div class="column__chat__contacts">
+				<ul>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--online"></i>
+						<span>Walter White</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--away"></i>
+						<span>Jessie Pinkman</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--busy"></i>
+						<span>Eddie Vedder</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--offline"></i>
+						<span>Jerry Cantrell</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--online"></i>
+						<span>Walter White</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--away"></i>
+						<span>Jessie Pinkman</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--busy"></i>
+						<span>Eddie Vedder</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--offline"></i>
+						<span>Jerry Cantrell</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--online"></i>
+						<span>Walter White</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--away"></i>
+						<span>Jessie Pinkman</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--busy"></i>
+						<span>Eddie Vedder</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--offline"></i>
+						<span>Jerry Cantrell</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--online"></i>
+						<span>Walter White</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--away"></i>
+						<span>Jessie Pinkman</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--busy"></i>
+						<span>Eddie Vedder</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--offline"></i>
+						<span>Jerry Cantrell</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--online"></i>
+						<span>Walter White</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--away"></i>
+						<span>Jessie Pinkman</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--busy"></i>
+						<span>Eddie Vedder</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--offline"></i>
+						<span>Jerry Cantrell</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--online"></i>
+						<span>Walter White</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--away"></i>
+						<span>Jessie Pinkman</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--busy"></i>
+						<span>Eddie Vedder</span>
+					</li>
+					<li class="column__chat__contact">
+						<i class="fa fa-circle column__chat__contact__icon column__chat__contact__icon--offline"></i>
+						<span>Jerry Cantrell</span>
+					</li>
+			</div>
+		</aside> 
+	</div>
+</body>
+</html>
