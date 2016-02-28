@@ -3,9 +3,9 @@
 }
 
 html, body {
-	font-family: "Open Sans", Georgia, Serif;
-	font-size: 14px;
-	background-color: gray;
+	font-family: Calibri, Cambria, sans-serif;
+	font-size: 13px;
+	background-color: #444c63;
 	height: 100%;
 	padding: 0;
 	margin: 0;
@@ -18,27 +18,27 @@ img {
 textarea {
 	width: 100%;
 	border-radius: 7px;
-	border-color: #BBB;
+	border-color: #97b3ce;
 	height: 100px;
 }
 
 .container {
 	display: inline-block;
-	height: 100%;
+	height: 99%;
 	width: 100%;
 }
 
 .column {
 	float: left;
-	border-right: 1px solid #BBB;
+	border-right: 1px solid #97b3ce;
 	background-color: white;
 }
 
 .column__header {
 	font-size: 13px;
-	color: #999;
-	border-bottom: 1px solid #BBB;
-	background-color: #E0E3DF;
+	color: #97b3ce;
+	border-bottom: 1px solid #97b3ce;
+	background-color: #f6fafe;
 }
 
 .column__header__text {
@@ -50,43 +50,50 @@ textarea {
 	min-width: 15%;
 	max-width: 200px;
 	background-color: transparent;
-	color: white;
+	color: #f6fafe;
+    height: 90%;
+    overflow: hidden;
 }
 
 .column__mail-list {
 	min-width: 25%;
 	max-width: 300px;
-	color: #999;
-	overflow: auto;
+	color: #9baec3;
 	height: 100%;
+}
+
+.column__mail-list__list {
+    overflow: auto;
+	height: 94%;
 }
 
 .column__mail-list__mail-item {
 	padding: 20px;
 	border-left-width: 3px;
 	border-left-style: solid;
-	border-bottom: 1px solid #BBB !important;
+	border-bottom: 1px solid #97b3ce !important;
 	cursor: pointer;
 }
 
 .column__mail-list__mail-item--green {
-	border-color: green;
+	border-color: #01caa0;
 }
 
 .column__mail-list__mail-item--purple {
-	border-color: purple;
+	border-color: #7874cf;
 }
 
 .column__mail-list__mail-item--blue {
-	border-color: blue;
+	border-color: #00aeef;
 }
 
 .column__mail-list__mail-item--red {
-	border-color: red;
+	border-color: #fd4326;
 }
 
 .column__mail-list__mail-item__date__title {
-	color: #333;
+	color: #829ab4;
+    font-size: 14px;
 }
 
 .column__mail-list__mail-item__date {
@@ -99,7 +106,7 @@ textarea {
 }
 
 .fa-star--orange {
-	color: orange;
+	color: #fead15;
 }
 
 .fa-star--gray {
@@ -116,6 +123,7 @@ textarea {
 
 .column__mail-list__mail-item__body__subject {
 	font-size: 13px;
+    color: #829ab4;
 }
 
 .column__mail-list__mail-item__body__excerpt {
@@ -124,13 +132,13 @@ textarea {
 
 .column__mail-body {
 	height: 100%;
-	color: #999;
+	color: #9baec3;
 	width: 45%;
 }
 
 .column__mail-body__menu__option {
 	display: inline-block;
-	border-right: 1px solid #BBB;
+	border-right: 1px solid #97b3ce;
 	padding: 10px;
 	cursor: pointer;
 }
@@ -142,19 +150,19 @@ textarea {
 .column__mail-body__content {
 	overflow: auto;
 	padding: 20px 20px 0;
-	height: 95%;
+	height: 94%;
 }
 
 .column__mail-body__content__title {
-	font-size: 20px;
+	font-size: 24px;
 	margin-top: 10px;
 }
 
 .column__mail-body__content__tag {
-	font-size: 12px;
+	font-size: 13px;
 	color: white;
-	padding: 3px 5px;
-	background-color: #D3D3D3;
+	padding: 3px 10px;
+	background-color: #ccd5e4;
 	border-radius: 5px;
 }
 
@@ -171,7 +179,7 @@ textarea {
 }
 
 .column__mail-body__content__footer {
-	padding-top: 30px;
+	padding: 30px 0;
 }
 
 .column__chat {
@@ -181,8 +189,8 @@ textarea {
 }
 
 .column__chat__contacts {
-	color: #333;
-	height: 95%;
+	color: #2f364a;
+	height: 94%;
 	overflow: auto;
 }
 
@@ -200,19 +208,19 @@ textarea {
 }
 
 .column__chat__contact__icon--online {
-	color: green;
+	color: #01caa0;
 }
 
 .column__chat__contact__icon--away {
-	color: yellow;
+	color: #f5a90f;
 }
 
 .column__chat__contact__icon--busy {
-	color: red;
+	color: #fd4326;
 }
 
 .column__chat__contact__icon--offline {
-	color: gray;
+	color: #d0d8e6;
 }
 
 .btn {
@@ -220,29 +228,36 @@ textarea {
 }
 
 .btn__compose {
-	padding: 10px 20px;
-	background-color: aqua;
+    font-size: 11px;
+    font-weight: bold;
+	padding: 10px;
+	background-color: #01caa0;
 	border-radius: 5px;
-	margin: 10px 15px;
+	margin: 15px;
 	color: white;
+    border: none;
 }
 
 .btn__icon {
-	float: rigth;
-	padding-left: 10px;
+	float: right;
+	padding: 2px 0 0 15px;
 }
 
 .rowgroup {
-	border-bottom: 1px #333 solid;
+	border-bottom: 1px #2f364a solid;
 	padding: 10px 0;
 }
 
+.rowgroup:last-child {
+	border-bottom: none;
+}
+
 .rowgroup__row {
-	padding: 12px 20px;
+	padding: 10px 20px;
 }
 
 .rowgroup__row--active {
-	background-color: #333;
+	background-color: #2f364a;
 }
 
 .rowgroup__row__i {
@@ -257,16 +272,16 @@ textarea {
 .rowgroup__row__label {
 	display: inline-block;
 	float: right;
-	padding: 6px 7px;
-	background-color: #333;
-	font-size: 10px;
+	padding: 5px 8px;
+	background-color: #2f364a;
+	font-size: 12px;
 	font-weight: 400;
 	border-radius: 3px;
-	margin-top: -3px;
+	margin-top: -2px;
 }
 
 .rowgroup__row__label--active {
-	background-color: red;
+	background-color: #fd4326;
 }
 
 ul {
@@ -280,17 +295,17 @@ ul {
 }
 
 ul .rowgroup__row__i--purple {
-	color: purple;
+	color: #7874cf;
 }
 
 ul .rowgroup__row__i--green {
-	color: green;
+	color: #01caa0;
 }
 
 ul .rowgroup__row__i--red {
-	color: red;
+	color: #fd4326;
 }
 
 ul .rowgroup__row__i--blue {
-	color: blue;
+	color: #00aeef;
 }
