@@ -1,0 +1,328 @@
+@bg-color: #444c63;
+@border-color: #97b3ce;
+@le-green: #01caa0;
+@le-purple: #7874cf;
+@le-blue: #00aeef;
+@le-red: #fd4326;
+@light-blue: #f6fafe;
+@le-gray: #ccd5e4;
+@darken-gray: #9baec3;
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: Calibri, Cambria, sans-serif;
+	font-size: 13px;
+	background-color: @bg-color;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+textarea {
+	width: 100%;
+	border-radius: 7px;
+	border-color: @border-color;
+	height: 100px;
+}
+
+figure {
+	text-align: center;
+}
+
+.container {
+	display: inline-block;
+	height: 99%;
+	width: 100%;
+}
+
+.column {
+	float: left;
+	border-right: 1px solid @border-color;
+	background-color: white;
+
+	&__header {
+		font-size: 13px;
+		color: @darken-gray;
+		border-bottom: 1px solid @border-color;
+		background-color: @light-blue;
+
+		&__text {
+			display: inline-block;
+			padding: 10px;
+		}
+	}
+
+	&__side-menu {
+		width: 15%;
+		background-color: transparent;
+		color: @light-blue;
+	    height: 90%;
+	    overflow: hidden;
+	}
+
+	&__feed {
+		width: 20%;
+		color: @darken-gray;
+		height: 100%;
+
+		&__entries {
+		    overflow: auto;
+			height: 94%;
+		}
+	}
+
+	&__details {
+		height: 100%;
+		color: @darken-gray;
+		width: 50%;
+	}
+
+	&__chat {
+		color: @darken-gray;
+		width: 15%;
+		height: 100%;
+	}
+}
+
+.feed__entry {
+	padding: 20px;
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-bottom: 1px solid @border-color !important;
+	cursor: pointer;
+
+	&--green {
+		border-color: @le-green;
+	}
+
+	&--purple {
+		border-color: @le-purple;
+	}
+
+	&--blue {
+		border-color: @le-blue;
+	}
+
+	&--red {
+		border-color: @le-red;
+	}
+
+	&__title {
+		color: @darken-gray;
+	    font-size: 14px;
+	}
+
+	&__date {
+		float: right;
+	}
+
+	&__i {
+		width: 20px;
+		padding: 0 5px;
+	}
+
+	&__header {
+		padding-bottom: 10px;
+	}
+
+	&__body {
+		margin-left: 50px;
+	}
+
+	&__subject {
+		font-size: 13px;
+	    color: @darken-gray;
+	}
+
+	&__excerpt {
+		font-size: 12px;
+	}
+}
+
+.details {
+	overflow: auto;
+	padding: 20px 20px 0;
+	height: 94%;
+
+	&__menu__option {
+		display: inline-block;
+		border-right: 1px solid @border-color;
+		padding: 10px;
+		cursor: pointer;
+
+		&__icon {
+			padding-right: 5px;
+		}
+	}
+
+	&__title {
+		font-size: 24px;
+		margin-top: 10px;
+	}
+
+	&__icon {
+		padding-left: 5px;
+	}
+
+	&__date {
+		float: right;
+	}
+
+	&__content {
+		margin-top: 30px;
+	}
+
+	&__footer {
+		padding: 30px 0;
+	}
+}
+
+.chat {
+	color: @darken-gray;
+	height: 94%;
+	overflow: auto;
+
+	&__contact {
+		padding: 15px;
+		font-size: 12px;
+
+		&:nth-child(odd) {
+			background-color: #D3D3D3;
+		}
+
+		&__icon {
+			padding-right: 5px;
+
+			&--online {
+				color: @le-green;
+			}
+
+			&--away {
+				color: #f5a90f;
+			}
+
+			&--busy {
+				color: @le-red;
+			}
+
+			&--offline {
+				color: #d0d8e6;
+			}
+		}
+	}
+}
+
+.btn {
+	cursor: pointer;
+
+	&__compose {
+	    font-size: 11px;
+	    font-weight: bold;
+		padding: 10px;
+		background-color: @le-green;
+		border-radius: 5px;
+		margin: 15px auto;
+		color: @light-blue;
+	    border: none;
+	    display: block;
+	}
+
+	&__icon {
+		float: right;
+		padding: 2px 0 0 15px;
+	}
+}
+
+.tag {
+	font-size: 13px;
+	color: @light-blue;
+	padding: 3px 10px;
+	background-color: @le-gray;
+	border-radius: 5px;
+}
+
+.fa-star--orange {
+	color: #fead15;
+}
+
+.fa-star--gray {
+	color: #D3D3D3;
+}
+
+.nostyle-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.rowgroup {
+	border-bottom: 1px #2f364a solid;
+	padding: 10px 0;
+
+	&:last-child {
+		border-bottom: none;
+	}
+
+	&__row {
+		padding: 10px 20px;
+
+		&--active {
+			background-color: #2f364a;
+		}
+
+		&__i {
+			padding: 0 10px 0 0;
+			width: 20px;
+
+			&--purple {
+				.nostyle-list();
+				color: @le-purple;
+			}
+
+			&--green {
+				.nostyle-list();
+				color: @le-green;
+			}
+
+			&--red {
+				.nostyle-list();
+				color: @le-red;
+			}
+
+			&--blue {
+				.nostyle-list();
+				color: @le-blue;
+			}
+		}
+
+		&__span {
+			padding-left: 5px;
+		}
+
+		&__label {
+			display: inline-block;
+			float: right;
+			padding: 5px 8px;
+			background-color: #2f364a;
+			font-size: 12px;
+			font-weight: 400;
+			border-radius: 3px;
+			margin-top: -5px;
+
+			&--active {
+				background-color: @le-red;
+			}
+		}
+	}
+
+	&__marked__ul__li {
+		margin: 10px 0;
+	}
+}
