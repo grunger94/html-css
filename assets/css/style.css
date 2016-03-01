@@ -22,6 +22,10 @@ textarea {
 	height: 100px;
 }
 
+figure {
+	text-align: center;
+}
+
 .container {
 	display: inline-block;
 	height: 99%;
@@ -47,27 +51,25 @@ textarea {
 }
 
 .column__side-menu {
-	min-width: 15%;
-	max-width: 200px;
+	width: 15%;
 	background-color: transparent;
 	color: #f6fafe;
     height: 90%;
     overflow: hidden;
 }
 
-.column__mail-list {
-	min-width: 25%;
-	max-width: 300px;
+.column__feed {
+	width: 20%;
 	color: #9baec3;
 	height: 100%;
 }
 
-.column__mail-list__list {
+.column__feed__entries {
     overflow: auto;
 	height: 94%;
 }
 
-.column__mail-list__mail-item {
+.feed__entry {
 	padding: 20px;
 	border-left-width: 3px;
 	border-left-style: solid;
@@ -75,32 +77,32 @@ textarea {
 	cursor: pointer;
 }
 
-.column__mail-list__mail-item--green {
+.feed__entry--green {
 	border-color: #01caa0;
 }
 
-.column__mail-list__mail-item--purple {
+.feed__entry--purple {
 	border-color: #7874cf;
 }
 
-.column__mail-list__mail-item--blue {
+.feed__entry--blue {
 	border-color: #00aeef;
 }
 
-.column__mail-list__mail-item--red {
+.feed__entry--red {
 	border-color: #fd4326;
 }
 
-.column__mail-list__mail-item__date__title {
+.feed__entry__title {
 	color: #829ab4;
     font-size: 14px;
 }
 
-.column__mail-list__mail-item__date {
+.feed__entry__date {
 	float: right;
 }
 
-.column__mail-list__mail-item__fa-star {
+.feed__entry__i {
 	width: 20px;
 	padding: 0 5px;
 }
@@ -113,52 +115,52 @@ textarea {
 	color: #D3D3D3;
 }
 
-.column__mail-list__mail-item__header {
+.feed__entry__header {
 	padding-bottom: 10px;
 }
 
-.column__mail-list__mail-item__body {
+.feed__entry__body {
 	margin-left: 50px;
 }
 
-.column__mail-list__mail-item__body__subject {
+.feed__entry__subject {
 	font-size: 13px;
     color: #829ab4;
 }
 
-.column__mail-list__mail-item__body__excerpt {
+.feed__entry__excerpt {
 	font-size: 12px;
 }
 
-.column__mail-body {
+.column__details {
 	height: 100%;
 	color: #9baec3;
-	width: 45%;
+	width: 50%;
 }
 
-.column__mail-body__menu__option {
+.details__menu__option {
 	display: inline-block;
 	border-right: 1px solid #97b3ce;
 	padding: 10px;
 	cursor: pointer;
 }
 
-.column__mail-body__menu__option__icon {
+.details__menu__option__icon {
 	padding-right: 5px;
 }
 
-.column__mail-body__content {
+.details {
 	overflow: auto;
 	padding: 20px 20px 0;
 	height: 94%;
 }
 
-.column__mail-body__content__title {
+.details__title {
 	font-size: 24px;
 	margin-top: 10px;
 }
 
-.column__mail-body__content__tag {
+.tag {
 	font-size: 13px;
 	color: white;
 	padding: 3px 10px;
@@ -166,60 +168,59 @@ textarea {
 	border-radius: 5px;
 }
 
-.column__mail-body__content__icon {
+.details__icon {
 	padding-left: 5px;
 }
 
-.column__mail-body__date {
+.details__date {
 	float: right;
 }
 
-.column__mail-body__content__main {
+.details__content {
 	margin-top: 30px;
 }
 
-.column__mail-body__content__footer {
+.details__footer {
 	padding: 30px 0;
 }
 
 .column__chat {
-	min-width: 15%;
-	max-width: 200px;
+	width: 15%;
 	height: 100%;
 }
 
-.column__chat__contacts {
+.chat {
 	color: #2f364a;
 	height: 94%;
 	overflow: auto;
 }
 
-.column__chat__contact {
+.chat__contact {
 	padding: 15px;
 	font-size: 12px;
 }
 
-.column__chat__contact:nth-child(odd) {
+.chat__contact:nth-child(odd) {
 	background-color: #D3D3D3;
 }
 
-.column__chat__contact__icon {
+.chat__contact__icon {
 	padding-right: 5px;
 }
 
-.column__chat__contact__icon--online {
+.chat__contact__icon--online {
 	color: #01caa0;
 }
 
-.column__chat__contact__icon--away {
+.chat__contact__icon--away {
 	color: #f5a90f;
 }
 
-.column__chat__contact__icon--busy {
+.chat__contact__icon--busy {
 	color: #fd4326;
 }
 
-.column__chat__contact__icon--offline {
+.chat__contact__icon--offline {
 	color: #d0d8e6;
 }
 
@@ -233,9 +234,10 @@ textarea {
 	padding: 10px;
 	background-color: #01caa0;
 	border-radius: 5px;
-	margin: 15px;
+	margin: 15px auto;
 	color: white;
     border: none;
+    display: block;
 }
 
 .btn__icon {
